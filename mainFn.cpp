@@ -6,14 +6,7 @@
  */
 
 //Summary of todo stuff
-/*
- * timer: basis for timer is below, but the <chrono> implementation needs to be tested on the pi
- *
- * GPIOs:
- * settings for the in/out pins to be finalized when integrating pi with DAC.
- * this applies to changing value/type/power. once again, the base code is below
- *
- */
+
 
 
 #include <iostream>
