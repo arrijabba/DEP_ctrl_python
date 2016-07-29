@@ -1,21 +1,19 @@
 # senior
 rPi code
 
-I am unable to compile this code on my comp due to architecture/library differences but its not bad at all.
+Ok this is gonna be a pain in the ass
 
-1. Open a terminal window (over SSH or on a display)
-2. navigate to the "senior design" folder on the desktop
+1. Copy all of the files in the repo to the senior design folder
 
-3. Run the following command after you update that file (over FTP? or USB or web)
+2. Now run the script file "runFirst.sh". Its just a bunch of Unix commands so if it fails,
+just go in and run them manually. This script compliles/installs the library
 
-```bash
-g++ -Wall -o test_wave mainFn.cpp
-```
-
-and if that doesn't work its probably because the library needs to be statically linked. Run this:
+3. Compilation:
 
 ```bash
-g++ -Wall -o test_wave mainFn.cpp -lwiringPi
+ gcc -Wall -pthread -o mainPy mainPy.cpp -lpigpio -lrt
 ```
+
+:] hopefully no errorx
 
 
